@@ -38,6 +38,6 @@ int main()
     // adding showpoint, fixed, and setprecision to make sure decimal places for money comes out
     cout << showpoint << fixed << setprecision( 2 )
          << *shoppingCart[i] << '\n';
-    return 0;
   }
+  return 0;
 }
