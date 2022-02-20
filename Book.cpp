@@ -46,12 +46,13 @@ namespace    // unnamed, anonymous namespace
 // Default and Conversion Constructor
 Book::Book( std::string title,  std::string author,  std::string isbn,  double price )
 ///////////////////////// TO-DO (2) //////////////////////////////
-// use a member intialization list to create a new object. 
-  : _isbn {std::move(isbn)},
-    _title{std::move(title)},
-    _author{std::move(author)},
-    _price {price}
-  {}
+  // use a member intialization list to create a new object.
+  : _isbn{ std::move( isbn ) },
+    _title{ std::move( title ) },
+    _author{ std::move( author ) },
+    _price{ price }
+{}
+
 /////////////////////// END-TO-DO (2) ////////////////////////////
 
 
@@ -88,7 +89,7 @@ Book::Book( Book && other ) noexcept
 }
 //= default;
 
-/////////```////////////// END-TO-DO (4) ////////////////////////////
+/////////////////////// END-TO-DO (4) ////////////////////////////
 
 
 
