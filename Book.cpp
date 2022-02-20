@@ -63,13 +63,13 @@ Book::Book( Book const & other )
 ///////////////////////// TO-DO (3) //////////////////////////////
 // Copy valuess from one object to create another
 // Copy valuess from one object to create another
-{
-  _isbn   = other._isbn;
-  _title  = other._title;
-  _author = other._author;
-  _price  = other._price;
-}
-// = default;
+// {
+//   _isbn   = other._isbn;
+//   _title  = other._title;
+//   _author = other._author;
+//   _price  = other._price;
+// }
+= default;
 
 /////////////////////// END-TO-DO (3) ////////////////////////////
 
