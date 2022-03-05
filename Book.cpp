@@ -62,13 +62,7 @@ Book::Book( std::string title,  std::string author,  std::string isbn,  double p
 Book::Book( Book const & other )
 ///////////////////////// TO-DO (3) //////////////////////////////
 // Copy valuess from one object to create another
-// Copy valuess from one object to create another
-// {
-//   _isbn   = other._isbn;
-//   _title  = other._title;
-//   _author = other._author;
-//   _price  = other._price;
-// }
+
 = default;
 
 /////////////////////// END-TO-DO (3) ////////////////////////////
@@ -81,13 +75,8 @@ Book::Book( Book && other ) noexcept
 ///////////////////////// TO-DO (4) //////////////////////////////
 // using the move constructor is more efficient then copying and deleting.
 // move each value over to the new object.
-{
-  _isbn   = std::move( other._isbn );
-  _title  = std::move( other._title );
-  _author = std::move( other._author );
-  _price  = std::move( other._price );
-}
-//= default;
+// 
+= default;
 
 /////////////////////// END-TO-DO (4) ////////////////////////////
 
